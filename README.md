@@ -1,4 +1,4 @@
-WAMPL: Another **W**es **A**nderson **M**at**P**lot**L**ib Palettes
+**W**es **A**nderson **M**at**P**lot**L**ib Palettes
 ====================================================================
 aka `wes`
 ----------
