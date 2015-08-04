@@ -1,5 +1,7 @@
-WAMPL: Another *W*es *A*nderson *M*at*P*lot*L*ib Palettes
-===========================================================
+WAMPL: Another **W**es **A**nderson **M**at**P**lot**L**ib Palettes
+====================================================================
+aka `wes`
+----------
 
 This is another [Wes Anderson Palettes](http://wesandersonpalettes.tumblr.com/)
 implementation. Currnetly, if you set your default pallete, it just modifies the
@@ -7,7 +9,7 @@ default color cycle to the one provided by the blog. I don't make any
 classification or useage inferences, unlike jiffyclub's fantastic 
 [palettable](https://github.com/jiffyclub/palettable). 
 
-Check out the [demo notebook](demoURL) for more information.
+Check out the [demo notebook](http://nbviewer.ipython.org/github/ljwolf/wampl/blob/master/demo.ipynb) for more information.
 
 Usage
 -----
