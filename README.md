@@ -31,3 +31,10 @@ You can also use this with
 [seaborn](http://stanford.edu/~mwaskom/software/seaborn/). Just remember to set
 your palette **after** importing seaborn, as seaborn overwrites matplotlib's
 [`rcdefaults`](http://matplotlib.org/users/customizing.html)
+
+License
+--------
+
+This is licensed in the Creative Commons for Attribution and ShareAlike
+purposes. 
+CC-BY-SA
