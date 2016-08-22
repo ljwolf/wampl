@@ -3,6 +3,8 @@
 aka `wes`
 ----------
 
+[![Build Status](https://travis-ci.org/ljwolf/wampl.svg?branch=master)](https://travis-ci.org/ljwolf/wampl)
+
 This is another [Wes Anderson Palettes](http://wesandersonpalettes.tumblr.com/)
 implementation. Currnetly, if you set your default pallete, it just modifies the
 default color cycle to the one provided by the blog. I don't make any
