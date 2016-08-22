@@ -1,0 +1,32 @@
+language: python
+sudo: false
+branches:
+only:
+  - master
+python:
+  - "2.7"
+  - "3.4"
+  - "3.5"
+
+before_install:
+  - wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh -O miniconda.sh
+  - chmod +x miniconda.sh
+  - ./miniconda.sh -b -p ./miniconda
+  - export PATH=`pwd`/miniconda/bin:$PATH
+  - conda update --yes conda
+  - conda install matplotlib seaborn
+
+install:
+  - conda update --yes conda
+  - conda install --yes matplotlib seaborn
+  - conda intsall --yes jupyter numpy
+
+script:
+  - jupyter nbconvert --to notebook --execute demo.ipynb
+
+notifications:
+    email:
+        recipients:
+            - levi.john.wolf@gmail.com
+        on_success: change
+        on_failure: always

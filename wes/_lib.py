@@ -1,5 +1,6 @@
 from matplotlib import rcParams
 import matplotlib.pyplot as plt
+import cycler
 import json
 import os
 
@@ -32,7 +33,7 @@ def _set_colors(ccycle):
     ccycle  :   List
                 A list of color indicators matplotlib can understand
     """
-    rcParams['axes.color_cycle'] = ccycle
+    rcParams['axes.prop_cycle'] = cycler.cycler(color=ccycle)
 
 def available(show=True):
     """
