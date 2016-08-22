@@ -1,0 +1,3 @@
+include demo.ipynb
+include README.md
+include wes/colors.json

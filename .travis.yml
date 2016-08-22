@@ -14,12 +14,11 @@ before_install:
   - ./miniconda.sh -b -p ./miniconda
   - export PATH=`pwd`/miniconda/bin:$PATH
   - conda update --yes conda
-  - conda install matplotlib seaborn
 
 install:
   - conda update --yes conda
   - conda install --yes matplotlib seaborn
-  - conda intsall --yes jupyter numpy
+  - conda install --yes jupyter numpy
 
 script:
   - jupyter nbconvert --to notebook --execute demo.ipynb
