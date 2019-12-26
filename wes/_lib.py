@@ -45,20 +45,24 @@ def available(show=True):
                 Whether or not to show the palettes as matplotlib plots
     """
     if not show:
-        return maps.keys()
+        return _cycles.keys()
     else:
-        fig, axes = plt.subplots(8,2, figsize=(6,12))
-        fig.tight_layout()
+        fig, axes = plt.subplots(4, 5, figsize=(16,20), sharex=True)
         for i, name in enumerate(_cycles.keys()):
-            row = i // 2
-            col = i % 2
+            row = i // 5
+            col = i % 5
             cycle = _cycles[name]
+            n_colors = len(cycle)
+            linewidth = (100 / n_colors)*1.66
             for j,c in enumerate(cycle):
-                axes[row,col].hlines(j, 0,1, colors=c,linewidth=30)
+                axes[row,col].hlines(j, 0,1, colors=c,linewidth=linewidth)
             axes[row,col].set_title(name)
             axes[row,col].get_xaxis().set_visible(False)
             axes[row,col].get_yaxis().set_visible(False)
-        plt.show()
+            axes[row,col].set_xlim(.1,.9)
+        axes[-1,-1].axis('off')
+        #fig.tight_layout(hpad=2)
+        return fig,axes
 
 def plot_palettes(*args):
     """
